@@ -6,22 +6,13 @@ Given the name of the project, it will generate the directories and populate som
 
 ## Structure
 
-package_name:
-
-┣━ README.md
-
-┣━ LICENSE
-
-┣━ setup.py
-
-┗━ package_name:
-
-┃   ┗━ __init__.py
-
-┣━ tests:
-
-┃   ┗━ test_basic.py
-
-┗━ docs:
-
+package_name:<br/>  
+┣━ README.md  <br/> 
+┣━ LICENSE  <br/> 
+┣━ setup.py  <br/> 
+┗━ package_name:<br/> 
+┃   ┗━ __init__.py<br/> 
+┣━ tests:<br/> 
+┃   ┗━ test_basic.py<br/> 
+┗━ docs:<br/> 
     ┗━
