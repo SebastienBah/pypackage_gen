@@ -87,26 +87,18 @@ def create_readme(top_dir,package_name,description="",docs=False):
 
 ## Repo Structure 
 
-{package}:
-
-┣━ README.md
-
-┣━ LICENSE
-
-┣━ setup.py
-
-┣━ {package}:
-
-┃   ┗━ __init__.py
+{package}:<br/>
+┣━ README.md<br/>
+┣━ LICENSE<br/>
+┣━ setup.py<br/>
+┣━ {package}:<br/>
+┃   ┗━ __init__.py<br/>
 """
     if docs:
         readme_str= readme_str + \
-                """┣━ tests:
-
-┃   ┗━ test_basic.py
-
-┗━ docs:
-
+                """┣━ tests:<br/>
+┃   ┗━ test_basic.py<br/>
+┗━ docs:<br/>
     ┗━"""
     else:
         readme_str= readme_str + \
