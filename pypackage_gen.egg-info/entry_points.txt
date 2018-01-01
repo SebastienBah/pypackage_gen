@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        pypackage_gen=pypackage_gen.__init__:main
-    
