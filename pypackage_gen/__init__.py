@@ -128,6 +128,7 @@ def main(option1):
     '''
     Description of the package.
     '''
+    pass
     """.format(license=license)
 
     with open(os.path.join(sub_dir,"__init__.py"),'w') as f:
