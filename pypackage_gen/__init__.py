@@ -118,7 +118,8 @@ def create_init(sub_dir,license):
     """
     __init__.py does not require anything special. It will just create a boilerplate file.
     """
-    init_str="""{license}
+    init_str="""
+{license}
 
 import click
 
@@ -128,6 +129,7 @@ def main(option1):
     '''
     Description of the package.
     '''
+    pass
     """.format(license=license)
 
     with open(os.path.join(sub_dir,"__init__.py"),'w') as f:
