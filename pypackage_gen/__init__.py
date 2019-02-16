@@ -136,22 +136,17 @@ def main(option1):
 
 def create_test(test_dir,package_name,license):
     """
-    test_basic.py will create a template test file and a context script
+    test_basic.py will create a template test file and an init file
     in order to run the tests without installing the package each time.
     """
     
-    context="""{license}
-
-import os
-import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import {package_name}""".format(package_name=package_name,license=license) 
+    context="""{license}""".format(license=license) 
     
-    with open(os.path.join(test_dir,"context.py"),"w") as f:
+    with open(os.path.join(test_dir,"__init__.py"),"w") as f:
         f.write(context)
         
     test_template="""{license}
-from .context import {package_name}""".format(package_name=package_name,license=license)
+import {package_name}""".format(package_name=package_name,license=license)
     with open(os.path.join(test_dir,"test_basic.py"),"w") as f:
         f.write(test_template)
         
