@@ -118,7 +118,8 @@ def create_init(sub_dir,license):
     """
     __init__.py does not require anything special. It will just create a boilerplate file.
     """
-    init_str="""{license}
+    init_str="""
+{license}
 
 import click
 
